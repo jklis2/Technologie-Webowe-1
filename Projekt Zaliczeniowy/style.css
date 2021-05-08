@@ -57,3 +57,9 @@ article p {
     text-align: justify;
     font-size: 18px;
 }
+iframe {
+    width: 100%;
+}
+footer {
+    line-height: 40px;
+}
