@@ -1,16 +1,19 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    width: 1300px;
+    text-align: center;
 }
 body {
     background-color: red;
-    text-align: center;
 }
 #Wrapper {
     max-width: 1300px;
-    margin: auto;
-    background-color: white;
+    margin: 0 auto;
+    background-color: white;;
+}
+header img {
     width: 100%;
     display: block;
 }
@@ -22,4 +25,7 @@ nav a {
     width: 33%;
     padding: 15px 30px;
     text-align: center;
+}
+a.Menu:hover {
+    font-size: 20px;
 }
