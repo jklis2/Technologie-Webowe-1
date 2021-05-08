@@ -28,4 +28,8 @@ nav a {
 }
 a.Menu:hover {
     font-size: 20px;
+    background-color: teal;
+}
+.active {
+    background-color: teal;
 }
