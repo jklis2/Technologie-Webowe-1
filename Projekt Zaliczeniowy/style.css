@@ -27,6 +27,8 @@ nav a {
     background-color: chartreuse;
     padding: 15px 30px;
     text-align: center;
+    text-decoration: none;
+    color: black;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
