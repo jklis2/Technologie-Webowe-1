@@ -9,7 +9,7 @@ body {
     background-color: red;
 }
 #Wrapper {
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: white;;
 }
@@ -18,13 +18,17 @@ header img {
     display: block;
 }
 nav {
-    background-color: yellowgreen;
+    overflow: hidden;
 }
 nav a {
-    display: inline-block;
-    width: 33%;
+    display: block;
+    width: 25%;
+    float: left;
+    background-color: chartreuse;
     padding: 15px 30px;
     text-align: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 a.Menu:hover {
     font-size: 20px;
@@ -62,4 +66,9 @@ iframe {
 }
 footer {
     line-height: 40px;
+}
+@media screen and (max-width: 800px) {
+    nav a {
+        width: 50%;
+    }
 }
