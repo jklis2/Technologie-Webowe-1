@@ -6,7 +6,7 @@
     text-align: center;
 }
 body {
-    background-color: red;
+    background-color: #C4FCEC;
 }
 #Wrapper {
     max-width: 1000px;
@@ -24,20 +24,21 @@ nav a {
     display: block;
     width: 25%;
     float: left;
-    background-color: chartreuse;
+    background-color: #20E5E8;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     color: black;
+    font-weight: bold;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 a.Menu:hover {
     font-size: 20px;
-    background-color: teal;
+    background-color: #1B18E6;
 }
 .active {
-    background-color: teal;
+    background-color: #1B18E6;
 }
 article {
     margin-top: 30px;
@@ -50,7 +51,7 @@ article h1 {
     text-align: center;
     margin: 0 20px 30px 20px;
     padding-bottom: 20px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #20E5E8;
 }
 img.Logo {
     width: 25%;
@@ -67,7 +68,7 @@ iframe {
     width: 100%;
 }
 footer {
-    line-height: 40px;
+    line-height: 30px;
 }
 @media screen and (max-width: 800px) {
     nav a {
