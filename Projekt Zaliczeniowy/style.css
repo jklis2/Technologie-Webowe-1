@@ -68,6 +68,21 @@ iframe {
     width: 100%;
     padding-bottom: 0px;
 }
+.Ikonki_mediów {
+    padding: 10px;
+}
+.Społeczność_podpis {
+    padding: 10px;
+}
+.Wyjazdy_podpis {
+    padding: 30px;
+}
+.Podpisy {
+    padding: 30px;
+}
+.Sprzęt {
+    border-radius: 30px 30px 80px 80px;
+}
 footer {
     line-height: 30px;
     font-size: 15px;
