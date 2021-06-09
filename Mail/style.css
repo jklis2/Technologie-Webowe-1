@@ -22,10 +22,14 @@ main {
     background-color: #1b98f8;
     color: white;
     border-radius: 20px;
-    padding: 8px 16px;
-    margin: 16px 0;
+    /*padding: 8px 16px;
+    margin: 16px 0;*/
+    justify-content: center;
+    margin-left: 28px;
+    margin-top: 10px;
     outline: none;
-    width: 100px;
+    width: auto;
+    height: auto;
     border: none;
     text-align: center;
   }
