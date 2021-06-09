@@ -1,9 +1,13 @@
+main {
+  display: flex;
+}
   #Menubar {
     background-color: #252a3a;
-    width: 100%;
-    height: 40px;
+    width: 300px;
+    height: auto;
     color: white;
-    overflow:hidden;
+    overflow: hidden;
+    display: block;
   }
   #Menu {
     font-size: large;
@@ -23,6 +27,7 @@
     outline: none;
     width: 100px;
     border: none;
+    text-align: center;
   }
   #Options {
     display: flex;
@@ -31,6 +36,9 @@
   }
   .Options span {
     padding: 5px;
+  }
+  #Options2 {
+    padding: 10px 20px;
   }
   .Labels {
     display: flex;
@@ -132,6 +140,7 @@
     background-color: white;
     height: 100px;
     width: 100%;
+    padding-bottom: 10px;
     border-bottom: 1px solid #dee3e1;
   }
   #Mail7 {
@@ -218,14 +227,16 @@
   #Forward:hover {
       background-color: lightgray;
   }
-  #Move_To {
-      margin-top: 4px;
+  #Buttons3 {
+    margin-left: 5px;
+  }
+  #Move_to {
       width: 100px;
       height:28px;
       border: 1.5px solid #cccccc;
       border-radius: 30px;
   }
-  #Move-to:hover {
+  #Move_to:hover {
       background-color: lightgray;
   }
   #Reply a {
@@ -238,7 +249,7 @@
       margin-top: 4px;
       margin-left: 20px;
   }
-  #Move-to a {
+  #Move_to a {
       position:absolute;
       margin-top: 4px;
       margin-left: 20px;  
