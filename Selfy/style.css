@@ -124,29 +124,5 @@ p{
 }
 .Footer{
     grid-area: footer;
-}
-
-
-
-/*body {
-    background-color: #656a6f;
-}
-
-.logo {
-padding-top: 60px;
-border-bottom: 1px solid whitesmoke;;
-padding-bottom: 45px;
-display: flex;
-}
-.navbar ul, .navbar ol{
-list-style: none;
-list-style-image: none;
-}
-.navbar-pasek {
-    display: flex;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    text-align: center;
 }
