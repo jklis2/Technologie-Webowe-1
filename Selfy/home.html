@@ -4,53 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Selfy</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <!-- JQouery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="mainimage"><img id="mainscreenimage" src="Selfy.jpg" alt=""></div>
-        <div class="nav">
-            <div class="Logo"><a href="home.html" alt=""><img src="Selfy logo.png" alt=""></a></div>
-            <div class="Menu">
-            <ul>
-                <li><a href="home.html" style="background-color: #ffc000;">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="styles.html">Styles</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Head -->
+    <section class="main_wrap">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <img src="logo.png" alt="Logo Selfy">
+                    </div>
+                    <nav class="nav" id="nav">
+                        <a href="home.html" class="nav__link current__page">Home</a>
+                        <a href="about.html" class="nav__link">About</a>
+                        <a href="styles.html" class="nav__link">Styles</a>
+                        <a href="gallery.html" class="nav__link">Gallery</a>
+                        <a href="blog.html" class="nav__link">Blog</a>
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </nav>
+                    <div id="navToggle" class="burger__container">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ./header -->  
+        <!-- Wrapper -->
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrapper__inner">
+                    <h1>You Idiots!</h1>
+                    <h3>These are not them! You’ve captured their stunt doubles!</h3>
+                    <h5>— Spaceballs</h5>
+                    <p>No more boring V-Cards, Selfy is the perfect theme for self promotion. A little piece of the internet all about you, customise and self express with Selfy... <a href="#">Read More</a></p>
+                </div>
+            </div>
+            <div class="backimage">
+                <img src="masthead.jpg" alt="Background image">
+            </div>
+        </div>
+        <!-- ./wrapper -->
+    </section>
+    <!-- ./Head -->
+    <!-- Content -->
+    <div class="content">
+        <div class="container">
+            <div class="content__inner">
+                <div class="content__inner--col">
+                    <h2>About Me</h2>
+                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p>
+                        Vivamus sagittis lacus vel augue laoreetrum faucibus dolor auctor. Aenean eu leonish quam ugue laoreet rutrum faucibus dolor.
+                    </p>
+                </div>
+                <div class="content__inner--col">
+                    <h2>What I do</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla hucibus idol.</p>
+                    <p>
+                        Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    </p>
+                </div>
+                <div class="content__inner--col">
+                    <h2>Get in touch</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    <p>
+                        <a href="mailto:email@email.com" class="emailcontact">
+                            Say Hi, Email me
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-        <div class="image">
-            <div class="imagetext">
-                <h1>You Idiots!</h1>
-                <h3>These are not them! You’ve captured their stunt doubles!</h3>
-                <h5>— Spaceballs</h5>
-                <p>No more boring V-Cards, Selfy is the perfect theme for self promotion. A little piece of the internet all about you, customise and self express with Selfy...<span> Read More</span></p>
+    <!-- ./content -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <img src="logo-foot.png" alt="Logo">
+                    <p class="footer__copyright--text">
+                        &copy;Copyright Selfy 2013
+                    </p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social--link">
+                        <img src="icon-facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <img src="icon-twitter.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <img src="icon-linkedin@.png" alt="LinkedIn">
+                    </a>
+                </div>
             </div>
         </div>
-            <div class="About-me">
-                <h2>About me</h2>
-                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
-                    Vivamus sagittis lacus vel augue laoreetrum faucibus dolor auctor. Aenean eu leonish quam ugue laoreet rutrum faucibus dolor.</p>
-            </div>
-            <div class="What-i-do">
-                <h2>What I do</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla hucibus idol.
-                    Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-            </div>
-            <div class="Get-in-touch">
-                <h2>Get in touch</h2>
-                Donec id elit non mi porta gravida at eget metus non mi porta gravida . Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.
-            </div>
-        <div class="Footer">
-            <div class="Copyright">Selfy @ Copyright Selfy 2013</div>
-            <div class="Social"></div>
-        </div>
-      </div>
+    </footer>
+    <!-- ./footer -->
+    <script src="script.js"></script>
 </body>
 </html>
