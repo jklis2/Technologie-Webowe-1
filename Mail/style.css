@@ -1,265 +1,221 @@
-main {
+body{
   display: flex;
+  flex-direction: column;
+  margin:0;
+  font-family: Arial,sans-serif;
 }
-  #Menubar {
-    background-color: #252a3a;
-    width: 300px;
-    height: auto;
-    color: white;
-    overflow: hidden;
-    display: block;
+p{
+  margin: 0;
+}
+#menu{
+  display: flex;
+  background-color:#252a3a;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#menu_button{
+  font-size:1rem;
+  height:28px;
+  width: 80px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: #252a3a;
+  border: none;
+  color: #2179e6;
+  margin-top:5px 0 5px;
+}
+.square{
+  height: 17px;
+  width: 17px;
+  border-radius: 3px;
+  background-color: #ffc94c;
+  display: flex;
+  margin-right:5px;
+}
+#blue_square{
+  background-color: #41ccb4;
+}
+#green_square{
+  background-color: #40c365;
+}
+
+
+#rest_of_menu{
+  align-items: left;
+  height:0;
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+  color: #366096;
+
+}
+#rest_of_menu button{
+  font-size: 1.1rem;
+  width: 110px;
+  height: 35px;
+  color: #fff;
+  background-color: #1b98f8;
+  border: none;
+  border-radius: 20px;
+  margin: auto;
+}
+#rest_of_menu p{
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.rest_of_menu_link{
+  text-decoration: none;
+  color: #fff;
+}
+#menu_button:focus{
+  outline: none;
+  border: none;
+}
+
+#menu_button:focus-within + #rest_of_menu{
+  
+  background-color: #252a3a;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  
+}
+.post{
+  display:flex;
+  flex-direction:row;
+  background-color:rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+.avatar_image{
+  width:50px;
+  height:50px;
+  margin-left:20px;
+}
+.text_in_posts{
+padding-left: 5px;
+}
+.name_in_post{
+  text-transform: uppercase;
+  color:rgb(138, 138, 138)
+}
+.title_in_post{
+  font-weight: 600;
+}
+.text_in_post{
+  padding-top: 2px;
+}
+#big_post_header{
+  display: grid;
+  padding-top:30px;
+  grid-template-columns: 54% auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  justify-content: space-between;
+}
+#big_post_header_text{
+  display: flex;
+  flex-direction: column;
+  padding-left:20px;
+}
+#big_post_title{
+  font-weight: 600;
+  font-size:2rem;
+}
+#big_post_header_date_and_rest{
+  text-decoration: none;
+}
+.big_post_header_date_and_rest_a_class{
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+}
+#big_post_header_date_and_rest_name{
+  color:rgb(123, 158, 255);
+}
+#big_post_buttons{
+  
+  display: grid;
+  grid-template-columns: 0fr 0fr;
+  grid-template-rows: 0fr 0fr;
+  align-items: right;
+}
+#move_btn{
+  grid-column:2;
+}
+.big_post_button{
+  height:28px;
+  width: 80px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border: 2px solid #e7e7e7;
+  border-radius: 100px;
+  margin-top:5px;
+  margin-right: 5px;
+}
+#big_post_content p{
+  color: black;
+  padding: 20px
+}
+
+@media screen and (min-width:640px){
+  body{
+      display: grid;
+      grid-template-columns: 200px auto;
+      grid-template-areas: 
+      "grid_menu grid_rest"
+      
   }
-  #Menu {
-    font-size: large;
-    padding-top: 1.5%;
-    padding-left: 92%;
-    color: #7ee3ff;
+  #menu_button{
+      visibility: hidden;
   }
-  #Menubar:hover {
-      height: 500px;
+  #main{
+      grid-area: grid_rest;
+      display: grid;
+      height: 100vh;
+      grid-template-rows: 0.3fr 0.7fr;
+      grid-template-areas: 
+      "grid_posts"
+      "grid_big_post";
   }
-  #Compose {
-    background-color: #1b98f8;
-    color: white;
-    border-radius: 20px;
-    justify-content: center;
-    margin-left: 28px;
-    margin-top: 30px;
-    outline: none;
-    width: auto;
-    height: auto;
-    border: none;
-    text-align: center;
+  #rest_of_menu{
+      grid-area: grid_menu;
+      height: auto;
+      width: 200px;
   }
-  #Options {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
+  #posts{
+      grid-area: grid_posts;
+      overflow: scroll;
+
   }
-  .Options span {
-    padding: 5px;
-  }
-  #Options2 {
-    padding: 10px 20px;
-  }
-  .Labels {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
+  #big_post{
+      grid-area: grid_big_post;
+      overflow: scroll;
   }
   
-  .Labels h2 {
-    color: #4b60a7;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 5px;
-    font-weight: 600;
-  }
+}
+@media screen and (min-width:960px) {
   
-  .Box {
-    display: flex;
-    align-items: center;
+  #main{
+      display: flex;
+      flex-direction: row;
+      
   }
-  
-  .Box span {
-    padding: 5px;
+  #posts{
+      border-right: 1px solid rgb(212, 212, 212);
   }
-  
-  .Rectangle {
-    width: 14px;
-    height: 14px;
-    border-radius: 3px;
+  #big_post_buttons{
+      display: grid;
+      grid-template-columns: 0fr 0fr 0fr;
+      grid-template-rows: 0fr;
   }
-  
-  .Orange {
-    background-color: rgb(240, 185, 83);
+  #move_btn{
+      grid-column:3;
   }
-  .Teal {
-    background-color: rgb(34, 175, 175);
-  }
-  .Green {
-    background-color: rgb(82, 175, 82);
-  }
-  #Mails {
-    background-color: white;
-    width: 100%;
-    height: auto;
-  }
-   
-  #Mail img {
-    width: 42px;
-    height: 42px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-  #Img {
-    padding-left: 4%;
-    padding-top: 2%;
-  }
-  #Mail {
-    display: inline-flex;
-    width: 100%;
-  }
-  #Mail1 {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    border-bottom: 1px solid #dee3e1;
-  }
-  #Mail1:hover{
-      background-color: lightgray;
-  }
-  #Mail2 {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    border-bottom: 1px solid #dee3e1;
-    border-left:10px solid lightblue;
-  }
-  #Mail3 {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    border-bottom: 1px solid #dee3e1;
-    border-left:10px solid lightblue;
-  }
-  #Mail4 {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    border-bottom: 1px;
-    border-bottom: 1px solid #dee3e1;
-  }
-  #Mail5 {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    border-bottom: 1px solid #dee3e1;
-  }
-  #Mail6 {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #dee3e1;
-  }
-  #Mail7 {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    border-bottom: 1px solid #dee3e1;
-  }
-   
-  #Mail_Text {
-    padding-left: 2%;
-    padding-top: 2%;
-  }
-  #Nick {
-    text-transform: uppercase;
-    overflow: hidden;
-    white-space: nowrap;
-    color: grey;
-    font-weight: 600;
-  }
-  #Message_Title {
-    overflow: hidden;
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  #Message {
-    overflow: hidden;
-    white-space: nowrap;
-    padding-top: 3%;
-  }
-  #Topic {
-      display: inline-flex;
-      height: 160px;
-      border-bottom: 1.5px solid #cccccc;
-  }
-  #Topicanddate {
-      width: 50%;
-      margin-left: 40px;
-      margin-top: 3%;
-  }
-  #Topic_Title {
-    font-size: 32px;
-    font-weight: 700;
-    word-wrap: break-word;
-    white-space:normal;
-  }
-  #Topic_Data {
-    font-size: 18px;
-  }
-  #Topic_Data a {
-    color: #37b9f5;
-  }
-  #Topic_Data c {
-    color: #cccccc;
-  }
-  #Topic_Data p {
-    margin-top: 2px;
-  }
-  #Buttons {
-      margin-top: 3%;
-      width: 50%;
-      display: inline-flex;
-      margin-left:70px;
-  }
-  #Buttons2 {
-      margin-left: 5px;
-  }
-  #Reply {
-      width: 100px;
-      height:28px;
-      border: 1.5px solid #cccccc;
-      border-radius: 30px;
-  }
-  #Reply:hover {
-      background-color: lightgray;
-  }
-  #Forward {
-      width: 100px;
-      height:28px;
-      border: 1.5px solid #cccccc;
-      border-radius: 30px;
-  }
-  #Forward:hover {
-      background-color: lightgray;
-  }
-  #Buttons3 {
-    margin-left: 5px;
-  }
-  #Move_to {
-      width: 100px;
-      height:28px;
-      border: 1.5px solid #cccccc;
-      border-radius: 30px;
-  }
-  #Move_to:hover {
-      background-color: lightgray;
-  }
-  #Reply a {
-      position:absolute;
-      margin-top: 4px;
-      margin-left: 30px;
-  }
-  #Forward a {
-      position:absolute;
-      margin-top: 4px;
-      margin-left: 20px;
-  }
-  #Move_to a {
-      position:absolute;
-      margin-top: 4px;
-      margin-left: 20px;  
-  }
-  #Content {
-      white-space: normal;
-      word-wrap: break-word;
-      max-width: 100%;
-      height:auto;
-      margin:20px 20px 20px 20px;
-  }
+}

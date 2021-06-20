@@ -5,100 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selfy</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="logo">
-                    <img src="logo.png" alt="Logo Selfy">
-                </div>
-                <nav class="nav" id="nav">
-                    <a href="home.html" class="nav__link ">Home</a>
-                    <a href="about.html" class="nav__link current__page">About</a>
-                    <a href="styles.html" class="nav__link">Styles</a>
-                    <a href="gallery.html" class="nav__link">Gallery</a>
-                    <a href="blog.html" class="nav__link">Blog</a>
-                    <a href="contact.html" class="nav__link">Contact</a>
-                </nav>
-                <div id="navToggle" class="burger__container">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+    <div class="header_class" >
+            <div class="logo_with_links_and_hamburger_class">
+                <a href="index.html" class="logo"><img src="images/logo@2x.png" alt="Selfy"></a>
+                <button class="hamburger_button" ></button>
+                <div class="links_in_menu">
+                    <a class="link_in_nav_menu" href="index.html">Home</a>
+                    <a class="link_in_nav_menu nav_link_active" href="about.html">About</a>
+                    <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                    <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                    <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                    <a class="link_in_nav_menu" href="contact.html">Contact</a>
                 </div>
             </div>
+            <div class="nav_menu_mobile nav_menu_mobile_closed">
+                <a class="link_in_nav_menu" href="index.html">Home</a>
+                <a class="link_in_nav_menu nav_link_active" href="about.html">About</a>
+                <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                <a class="link_in_nav_menu" href="contact.html">Contact</a>
+            </div>
+    </div>
+    <div class="main">
+        <img class="white_frame" id="about_japanese_man" src="images/mock-small.jpg" alt="">
+        <div class="headers_lower_text">
+            <h1 class="title_part_of_main" id="about_about_me">About Me</h1>
+            <p>Praesent commodo cursus magna, venenatis vestibulum. Donec id elit 
+                non mi porta gravida at eget vel scelerisl consectetur etsie.</p>
         </div>
-    </header>
-    <div class="about">
-        <div class="container">
-            <div class="about__inner">
-                <div class="about__img">
-                    <img data-modal="0" src="mock-small.jpg" alt="About Me Image">
-                </div>
-                <div class="about__content">
-                    <h1 class="dot">About Me</h1>
-                    <p class="about__content--cyt">Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non mi porta gravida at eget vel scelerisl consectetur etsie.</p>
-                    <div class="about__cols">
-                        <div class="about__cols--col">
-                            <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-
-                            <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur rutrum fauci adipiscing elit.</p>
-                        </div>
-                        <div class="about__cols--col">
-                            <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.</p>
-                        </div>
-                    </div>
-                </div>
+        <div id="about_main_text">
+            <div id="about_main_text_1_part">
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Deleniti est repellendus hic. Similique, autem id consequuntur
+                      fugit neque impedit officia expedita, debitis, qui magni
+                       asperiores quisquam rem vel hic saepe.</p>
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deleniti est repellendus hic. Similique, autem id consequuntur
+                    fugit neque impedit officia expedita, debitis, qui magni
+                    asperiores quisquam rem vel hic saepe.</p>
+            </div>
+            <div id="about_main_text_2_part">
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Deleniti est repellendus hic. Similique, autem id consequuntur
+                     fugit neque impedit officia expedita, debitis, qui magni
+                      asperiores quisquam rem vel hic saepe.
+                      eleniti est repellendus hic. Similique, autem id consequuntur
+                      fugit neque impedit officia expedita, debitis, qui magni
+                       asperiores quisquam rem vel hic saepe.</p>
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deleniti est repellendus hic. Similique, autem id consequuntur
+                    fugit neque impedit officia expedita, debitis, qui magni
+                    asperiores quisquam rem vel hic saepe.</p>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__copyright">
-                    <img src="logo-foot.png" alt="Logo">
-                    <p class="footer__copyright--text">
-                        &copy;Copyright Selfy 2013
-                    </p>
-                </div>
-                <div class="footer__social">
-                    <a href="#" class="footer__social--link">
-                        <img src="icon-facebook.png" alt="Facebook">
-                    </a>
-                    <a href="#" class="footer__social--link">
-                        <img src="icon-twitter.png" alt="Twitter">
-                    </a>
-                    <a href="#" class="footer__social--link">
-                        <img src="icon-linkedin@.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
+    <div class="footer">
+        <div class="logo_links_footer">
+            <a href="#"><img src="images/icon-facebook@2x.png" alt="F"></a>
+            <a href="#"><img src="images/icon-twitter@2x.png" alt="T"></a>
+            <a href="#"><img src="images/icon-linkedin@2x.png" alt="L"></a>
         </div>
-    </footer>
-    <div class="modal" id="modal_project">
-        <div class="modal__dialog">
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slider">
-                        <div class="slider__photo">
-                            <img id="workImage" src="mock-small.jpg" alt="About Me Image">
-                        </div>
-                    </div>
-                    <div class="slider__btn prev">
-                        <div class="btn__prev"><</div>
-                    </div>
-                    <div class="slider__btn next">
-                        <div class="btn__next">></div>
-                    </div>
-                </div>
-            </div>
+        <div class="selfy_copyright">
+            <a href="index.html"><img src="images/logo-foot@2x.png" alt="Selfy"></a>
+            <p>© Copyright Selfy 2013</p>
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

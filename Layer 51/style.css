@@ -2,7 +2,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 460px;
-    background-image: url(tlo.png);
+    background-image: url(./Photo/tlo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
